@@ -108,7 +108,11 @@ pre):not(.code-expand-btn.expand-done + *) {
 .highlight .code {
   vertical-align: top;
 }
-.highlight .code:before {
+.highlight td.gutter pre {
+  border-right: 1px solid #b9b4b3;
+  padding-right: 0.5rem;
+}
+.highlight .language {
   position: absolute;
   font-size: 13px;
   top: 4px;
@@ -118,10 +122,6 @@ pre):not(.code-expand-btn.expand-done + *) {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
   filter: alpha(opacity=25);
   font-weight: 700;
-}
-.highlight td.gutter pre {
-  border-right: 1px solid #b9b4b3;
-  padding-right: 0.5rem;
 }
 .highlight pre {
   margin: 6px 0;
@@ -389,11 +389,11 @@ pre):not(.code-expand-btn.expand-done + *) {
   margin-inline: 0;
   padding-block: 48px;
 }
-.layout #mainbody #post {
+.layout #mainbody #page {
   padding-inline: 12px;
 }
 @media screen and (min-width: 640px) {
-  .layout #mainbody #post {
+  .layout #mainbody #page {
     padding-inline: 48px;
   }
 }
@@ -428,7 +428,6 @@ article h6 {
   padding-inline: 4px;
 }
 article h1 {
-  margin-block-start: 0;
   font-size: 32px;
   line-height: 48px;
 }
@@ -648,6 +647,33 @@ article table:not(figure.highlight *) {
 article table:not(figure.highlight *) thead,
 article table:not(figure.highlight *) tbody tr {
   height: 24px;
+}
+#page-head {
+  margin-inline: 4px;
+  line-height: 24px;
+  font-size: 13px;
+}
+#page-head h1 {
+  margin-block-start: 24px;
+  margin-block-end: 48px;
+  font-size: 32px;
+  line-height: 48px;
+}
+#page-head a {
+  display: inline-block;
+  color: #2094f3;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+#page-head a:hover {
+  color: #ff5724;
+}
+#page-head #page-meta {
+  color: #bbb;
 }
 @-moz-keyframes throttle {
   0% {
