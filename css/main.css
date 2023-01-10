@@ -391,6 +391,7 @@ pre):not(.code-expand-btn.expand-done + *) {
 }
 .layout #mainbody #post {
   padding-inline: 12px;
+  padding-block: 48px;
 }
 @media screen and (min-width: 640px) {
   .layout #mainbody #post {
@@ -671,6 +672,27 @@ article table:not(figure.highlight *) tbody tr {
 #article-container {
   margin-inline: 4px;
 }
+#post-copyright {
+  color: #bbb;
+  font-size: 14px;
+  text-align: center;
+  margin-block: 48px;
+}
+#post-copyright i:before {
+  vertical-align: bottom;
+  font-size: 20px;
+}
+#post-copyright a {
+  color: #bbb;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#post-copyright a:hover {
+  color: #ff5724;
+}
 #post-context {
   display: -webkit-box;
   display: -moz-box;
@@ -684,6 +706,7 @@ article table:not(figure.highlight *) tbody tr {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  border-top: 1px dashed #aaa;
 }
 #post-context #post-prev {
   width: 50%;
