@@ -1,4 +1,18 @@
 (() => {
+  class Welcome {
+    static init() {
+      console.info(`%c
+  ████████╗██████╗ ███████╗███████╗ ██████╗ ██╗██╗
+  ╚══██╔══╝██╔══██╗██╔════╝██╔════╝██╔═══██╗██║██║
+     ██║   ██████╔╝█████╗  █████╗  ██║   ██║██║██║
+     ██║   ██╔══██╗██╔══╝  ██╔══╝  ██║   ██║██║██║
+     ██║   ██║  ██║███████╗██║     ╚██████╔╝██║███████╗
+     ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝      ╚═════╝ ╚═╝╚══════╝
+
+                  Welcome to trefoil!`, "color:#1fc7b6")
+    }
+  }
+
   class Trefoil {
     static init() {
       function toastify(level, message, options) {
@@ -142,10 +156,11 @@
           })
         }, 100)
       })
-      objserver.observe(document.querySelector('#page'))
+      objserver.observe(document.querySelector('#post'))
     }
   }
 
+  Welcome.init()
   Trefoil.init()
   CodeUtils.init()
   LayoutGlobalChange.init()

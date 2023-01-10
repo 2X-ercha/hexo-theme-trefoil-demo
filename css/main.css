@@ -389,11 +389,11 @@ pre):not(.code-expand-btn.expand-done + *) {
   margin-inline: 0;
   padding-block: 48px;
 }
-.layout #mainbody #page {
+.layout #mainbody #post {
   padding-inline: 12px;
 }
 @media screen and (min-width: 640px) {
-  .layout #mainbody #page {
+  .layout #mainbody #post {
     padding-inline: 48px;
   }
 }
@@ -425,7 +425,6 @@ article h5,
 article h6 {
   margin-block-start: 24px;
   margin-block-end: 12px;
-  padding-inline: 4px;
 }
 article h1 {
   font-size: 32px;
@@ -453,7 +452,6 @@ article h6 {
 }
 article p {
   margin-block: 24px;
-  padding-inline: 4px;
   line-height: 1.5;
 }
 article p a {
@@ -540,7 +538,6 @@ article ol,
 article dl {
   margin-block-start: 12px;
   margin-block-end: 24px;
-  padding-inline: 4px;
   line-height: 1.5;
 }
 article ul,
@@ -575,7 +572,6 @@ article li {
 article hr {
   margin-block-start: 34px;
   margin-block-end: 36px;
-  padding-inline: 4px;
   border-color: #ddd;
 }
 article code {
@@ -591,9 +587,6 @@ article code {
   padding-inline: 4px;
   margin-inline: 4px;
   display: inline-block;
-}
-article pre {
-  padding-inline: 4px;
 }
 article pre code {
   line-height: 1.5;
@@ -648,18 +641,18 @@ article table:not(figure.highlight *) thead,
 article table:not(figure.highlight *) tbody tr {
   height: 24px;
 }
-#page-head {
+#post-head {
   margin-inline: 4px;
   line-height: 24px;
   font-size: 13px;
 }
-#page-head h1 {
+#post-head h1 {
   margin-block-start: 24px;
   margin-block-end: 48px;
   font-size: 32px;
   line-height: 48px;
 }
-#page-head a {
+#post-head a {
   display: inline-block;
   color: #2094f3;
   text-decoration: none;
@@ -669,11 +662,96 @@ article table:not(figure.highlight *) tbody tr {
   -ms-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
-#page-head a:hover {
+#post-head a:hover {
   color: #ff5724;
 }
-#page-head #page-meta {
+#post-head #post-meta {
   color: #bbb;
+}
+#article-container {
+  margin-inline: 4px;
+}
+#post-context {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+#post-context #post-prev {
+  width: 50%;
+  text-align: left;
+  margin-inline-end: 8px;
+  padding-block: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+#post-context #post-next {
+  width: 50%;
+  text-align: right;
+  margin-inline-start: 8px;
+  padding-block: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+#post-context span {
+  font-size: 13px;
+  color: #bbb;
+  padding-block-end: 6.5px;
+}
+#post-context a {
+  color: #000;
+  font-size: 24px;
+  height: 100%;
+  width: 75%;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#post-context a:hover {
+  color: #ff5724;
 }
 @-moz-keyframes throttle {
   0% {
