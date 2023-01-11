@@ -16,7 +16,8 @@
     error: '复制错误',
     noSupport: '浏览器不支持'
   },
-  copyright: undefined
+  copyright: undefined,
+  lazyload: {"onerror":"/img/favicon.png"}
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
   title: 'trefoid 主题编写-样式测试: 基础markdown语法测试',
   isPost: true,
@@ -24,7 +25,7 @@
   postUpdate: '2023-01-03 20:32:42'
 }</script><!-- TODO: include ./head/noscript.pug--><!-- TODO: (??)!=fragment_cache('injectHeadcss', function(){return inject_head_css()})--><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"></div><!-- TODO: !=partial('includes/sidebar', {}, {cache: true})--><div class="post" id="body-wrap"><header id="header"></header><main class="layout" id="content-inner"><!-- TODO: 一些临时说明一般而言<aside>应该在block中被定义（避免无内容的空标签）
 然而考虑到一些样式表的占位情况
-故之后视情况讨论--><aside id="leftbody"></aside><div id="mainbody"><div class="typesetting" id="post"><div id="post-head"><div id="post-folder"><a href="/">首页</a><span> / </span><a href="/56d88b5449.html">合集：样式测试</a></div><div id="post-meta">发布于 <time class="lately" datetime="2023-01-03T12:32:42.389Z" title="page.date 2023-01-03 20:32:42">2023-01-03</time></div><h1 id="post-title">trefoid 主题编写-样式测试: 基础markdown语法测试</h1></div><article class="post-content" id="article-container"><html><head></head><body><p>不规范使用的 h1 这里就不写了，样式与标题基本相同</p>
+故之后视情况讨论--><aside id="leftbody"></aside><div id="mainbody"><div class="typesetting" id="post"><div id="post-head"><div id="post-folder"><a href="/">首页</a><span> / </span><a href="/56d88b5449.html">合集：样式测试</a></div><div id="post-meta">发布于 <time class="lately" datetime="2023-01-03T12:32:42.389Z" title="page.date 2023-01-03 20:32:42">2023-01-03</time></div><h1 id="post-title">trefoid 主题编写-样式测试: 基础markdown语法测试</h1></div><article class="post-content" id="article-container"><p>不规范使用的 h1 这里就不写了，样式与标题基本相同</p>
 <blockquote>
 <p><em>注：在文本中使用 h1 是不规范的，因此在目录中 h1 将不被渲染计入</em></p>
 </blockquote>
@@ -158,7 +159,7 @@
 <li><p>Open the file containing the Linux mascot.</p>
 </li>
 <li><p>Marvel at its beauty.</p>
-<p><span><img src="/./img/favicon.png" alt="Tux, the Linux mascot"></span></p>
+<p><span><img src="/./img/favicon.png" alt="Tux, the Linux mascot" srcset="/img/loading.gif" data-srcset="/./img/favicon.png" class="lazy-load"></span></p>
 </li>
 <li><p>Close the file.</p>
 </li>
@@ -231,11 +232,11 @@
 </blockquote>
 <h2 id="图片语法"><a href="#图片语法" class="headerlink" title="图片语法"></a>图片语法</h2><p>要添加图像，请使用感叹号 !, 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。</p>
 <p><code>![Tux, the Linux mascot](./img/favicon.png)</code></p>
-<p><span><img src="/./img/lightbox-test.jpg" alt="灯箱与样式测试"></span></p>
-<p>这一行内插入个大图片<span><img src="/./img/lightbox-test.jpg" alt="行内大图片测试"></span>试试</p>
-<p>这一行内插入个小图片<span><img src="/./img/favicon.png" alt="行内小图片测试"></span>试试</p>
+<p><span><img src="/./img/lightbox-test.jpg" alt="灯箱与样式测试" srcset="/img/loading.gif" data-srcset="/./img/lightbox-test.jpg" class="lazy-load"></span></p>
+<p>这一行内插入个大图片<span><img src="/./img/lightbox-test.jpg" alt="行内大图片测试" srcset="/img/loading.gif" data-srcset="/./img/lightbox-test.jpg" class="lazy-load"></span>试试</p>
+<p>这一行内插入个小图片<span><img src="/./img/favicon.png" alt="行内小图片测试" srcset="/img/loading.gif" data-srcset="/./img/favicon.png" class="lazy-load"></span>试试</p>
 <h3 id="图片链接"><a href="#图片链接" class="headerlink" title="图片链接"></a>图片链接</h3><p>给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。（即链接嵌套图片）</p>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/"><span><img src="/./img/favicon.png" alt="Tux, the Linux mascot"></span></a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/"><span><img src="/./img/favicon.png" alt="Tux, the Linux mascot" srcset="/img/loading.gif" data-srcset="/./img/favicon.png" class="lazy-load"></span></a></p>
 <h2 id="转义字符语法"><a href="#转义字符语法" class="headerlink" title="转义字符语法"></a>转义字符语法</h2><p>要显示原本用于格式化 Markdown 文档的字符，请在字符前面添加反斜杠字符 \ 。</p>
 <p>此部分建议查看文档：<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/escaping-characters.html">Markdown 转义字符语法</a></p>
 <h2 id="内嵌-HTML-标签"><a href="#内嵌-HTML-标签" class="headerlink" title="内嵌 HTML 标签"></a>内嵌 HTML 标签</h2><p>对于 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 本身。如需使用 HTML，不需要额外标注这是 HTML 或是 Markdown，只需 HTML 标签添加到 Markdown 文本中即可。</p>
@@ -251,7 +252,7 @@
 </tbody></table>
 
 <p>This is another regular paragraph.</p>
-</body></html></article></div><div id="post-copyright"><span>本文采用 </span><i class="ri-creative-commons-fill"> </i><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="font-weight: bold">CC BY-NC-SA 4.0</a><span> 协议，转载请标注文章来源。</span></div><div id="post-context"><div id="post-prev"><span>返回合集首页</span><a href="/56d88b5449.html">trefoid 主题编写-样式测试</a></div><div id="post-next"><span>接下来阅读</span><a href="/5d6d0217ee.html">扩展markdown语法测试</a></div></div></div><aside id="rightbody"></aside></main><footer id="footer"></footer></div><div id="rightside"></div><!-- TODO: include './rightside.pug'--><!-- TODO: !=partial('includes/third-party/search/index', {}, {cache: true})--><div id="srcipt">
+</article></div><div id="post-copyright"><span>本文采用 </span><i class="ri-creative-commons-fill"> </i><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="font-weight: bold">CC BY-NC-SA 4.0</a><span> 协议，转载请标注文章来源。</span></div><div id="post-context"><div id="post-prev"><span>返回合集首页</span><a href="/56d88b5449.html">trefoid 主题编写-样式测试</a></div><div id="post-next"><span>接下来阅读</span><a href="/5d6d0217ee.html">扩展markdown语法测试</a></div></div></div><aside id="rightbody"></aside></main><footer id="footer"></footer></div><div id="rightside"></div><!-- TODO: include './rightside.pug'--><!-- TODO: !=partial('includes/third-party/search/index', {}, {cache: true})--><div id="srcipt">
 <script src="/js/main.js"></script>
 
 <script src="https://cdn1.tianli0.top/npm/toastify-js/src/toastify.min.js"></script>

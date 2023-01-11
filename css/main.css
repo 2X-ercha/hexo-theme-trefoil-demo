@@ -30,17 +30,8 @@ pre):not(.code-expand-btn.expand-done + *) {
 .highlight {
   position: relative;
   overflow: auto;
-  -webkit-transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  -moz-transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  -ms-transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-box-shadow: 0 5px 32px #ddd;
-  box-shadow: 0 5px 32px #ddd;
-}
-.highlight:hover {
-  -webkit-box-shadow: 0 3px 32px #aaa;
-  box-shadow: 0 3px 32px #aaa;
+  -webkit-box-shadow: 0 2px 7px rgba(0,0,0,0.09);
+  box-shadow: 0 2px 7px rgba(0,0,0,0.09);
 }
 .highlight figcaption {
   padding: 8px 0;
@@ -77,11 +68,11 @@ pre):not(.code-expand-btn.expand-done + *) {
   height: 30px;
   bottom: 0;
   left: 0;
-  background: -webkit-linear-gradient(270deg, rgba(170,170,170,0), #ddd);
-  background: -moz-linear-gradient(270deg, rgba(170,170,170,0), #ddd);
-  background: -o-linear-gradient(270deg, rgba(170,170,170,0), #ddd);
-  background: -ms-linear-gradient(270deg, rgba(170,170,170,0), #ddd);
-  background: linear-gradient(180deg, rgba(170,170,170,0), #ddd);
+  background: -webkit-linear-gradient(270deg, rgba(255,253,253,0.62), #fffdfd);
+  background: -moz-linear-gradient(270deg, rgba(255,253,253,0.62), #fffdfd);
+  background: -o-linear-gradient(270deg, rgba(255,253,253,0.62), #fffdfd);
+  background: -ms-linear-gradient(270deg, rgba(255,253,253,0.62), #fffdfd);
+  background: linear-gradient(180deg, rgba(255,253,253,0.62), #fffdfd);
   pointer-events: none;
 }
 .highlight .code-expand-btn i {
@@ -327,8 +318,8 @@ pre):not(.code-expand-btn.expand-done + *) {
 }
 .box-test {
   border-radius: 2px;
-  -webkit-box-shadow: 0 8px 32px #000;
-  box-shadow: 0 8px 32px #000;
+  -webkit-box-shadow: 0 2px 7px rgba(0,0,0,0.09);
+  box-shadow: 0 2px 7px rgba(0,0,0,0.09);
 }
 .typesetting {
   background-size: 100% 24px;
@@ -509,12 +500,8 @@ article img {
   -o-transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   -ms-transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-box-shadow: 0 5px 32px #ddd;
-  box-shadow: 0 5px 32px #ddd;
-}
-article img:hover {
-  -webkit-box-shadow: 0 3px 32px #aaa;
-  box-shadow: 0 3px 32px #aaa;
+  -webkit-box-shadow: 0 2px 7px rgba(0,0,0,0.09);
+  box-shadow: 0 2px 7px rgba(0,0,0,0.09);
 }
 @media screen and (min-width: 640px) {
   article del {
