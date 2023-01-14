@@ -1,12 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><!-- TODO: is_archive() ? page.title = findArchivesTitle(page, theme.menu, date) : ''--><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="canonical" href="https://noionion.top/09e2c45dd5.html"><title>trefoid 主题编写-样式测试: 标签外挂测试 | Trefoil</title><meta name="author" content="noionion"><meta name="copyright" content="noionion"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><!-- TODO: css Only necessary css files are selected. It is recommended to write files separately and use 'include' to import-->
-<link rel="stylesheet" href="/css/main.css">
-
-<link rel="stylesheet" href="https://cdn1.tianli0.top/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
-
-<link rel="stylesheet" href="/css/font/remixicon.css">
-
-<link rel="stylesheet" href="https://cdn1.tianli0.top/npm/toastify-js/src/toastify.min.css">
-<script>const GLOBAL_CONFIG = {
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel="canonical" href="https://noionion.top/09e2c45dd5.html"><title>trefoid 主题编写-样式测试: 标签外挂测试 | Trefoil</title><meta name="author" content="noionion"><meta name="copyright" content="noionion"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css"><link rel="stylesheet" href="/css/font/remixicon.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/toastify-js/src/toastify.min.css"><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -18,70 +10,4 @@
   },
   copyright: undefined,
   lazyload: {"onerror":"/img/favicon.png"}
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'trefoid 主题编写-样式测试: 标签外挂测试',
-  isPost: true,
-  isHome: false,
-  postUpdate: '2023-01-10 16:48:06'
-}</script><!-- TODO: include ./head/noscript.pug--><!-- TODO: (??)!=fragment_cache('injectHeadcss', function(){return inject_head_css()})--><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"></div><!-- TODO: !=partial('includes/sidebar', {}, {cache: true})--><div class="post" id="body-wrap"><header id="header"></header><main class="layout" id="content-inner"><!-- TODO: 一些临时说明一般而言<aside>应该在block中被定义（避免无内容的空标签）
-然而考虑到一些样式表的占位情况
-故之后视情况讨论--><aside id="leftbody"></aside><div id="mainbody"><div class="typesetting" id="post"><div id="post-head"><div id="post-folder"><a href="/">首页</a><span> / </span><a href="/56d88b5449.html">合集：样式测试</a></div><div id="post-meta">发布于 <time class="lately" datetime="2023-01-10T08:48:06.015Z" title="page.date 2023-01-10 16:48:06">2023-01-10</time></div><h1 id="post-title">trefoid 主题编写-样式测试: 标签外挂测试</h1></div><article class="post-content" id="article-container"><h2 id="mark-行内文本标记"><a href="#mark-行内文本标记" class="headerlink" title="mark 行内文本标记"></a>mark 行内文本标记</h2><figure class="highlight markdown"><figcaption><span>Code</span><i class="ri-file-copy-line click-limit"></i></figcaption><div class="code-expand-btn"><i class="ri-arrow-down-s-fill"></i></div><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% mark 文本 [color:颜色] [style:样式] %}</span><br></pre></td></tr></tbody></table><span class="language">Markdown</span></figure>
-
-<p>既然是记事本风格的主题，那自然要有笔记风格的行内文本样式</p>
-<p>我想用彩虹一般的<span class="tag-mark red ">红</span><span class="tag-mark orange ">橙</span><span class="tag-mark yellow ">黄</span><span class="tag-mark green ">绿</span><span class="tag-mark cyan ">青</span><span class="tag-mark blue ">蓝</span><span class="tag-mark purple ">紫</span>颜色标记，额外加一个<span class="tag-mark grey ">灰</span>色跟黑色作区别</p>
-<p>同色的修饰是不是也应该搞一搞</p>
-<p>我试着<span class="tag-mark red u">红色字</span>加条下划线，并给<span class="tag-mark orange wavy">橙色字</span>打上波浪线<br>着重标记着<span class="tag-mark purple emp">紫色字</span>，然后偷偷抹匀了<span class="tag-mark grey cover">灰色字</span><br>突然想删掉<span class="tag-mark blue del">蓝色字</span>，又想给文字写点<span class="tag-mark green sup">[绿色上角标]</span>和<span class="tag-mark cyan sub">[青色下角标]</span><br>原谅我有点贪心，到最后只想要默认颜色无脑 <span class="tag-mark  kbd">ctrl</span> <span class="tag-mark  kbd">c</span>+<span class="tag-mark  kbd">v</span></p>
-<h2 id="highlighter-荧光笔"><a href="#highlighter-荧光笔" class="headerlink" title="highlighter 荧光笔"></a>highlighter 荧光笔</h2><figure class="highlight markdown"><figcaption><span>Code</span><i class="ri-file-copy-line click-limit"></i></figcaption><div class="code-expand-btn"><i class="ri-arrow-down-s-fill"></i></div><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% highlighter 文本 color:颜色 [url:链接] %}</span><br></pre></td></tr></tbody></table><span class="language">Markdown</span></figure>
-
-<p>做笔记，有时候用用<span class="tag-highlighter green">荧光笔</span>我觉得不过分吧</p>
-<p>但我又想高亮带点链接，比如<a target="_blank" rel="noopener" href="https://github.com/2X-ercha/hexo-theme-trefoil" class="tag-highlighter cyan">github</a></p>
-<span class="tag-highlighter red">红</span><span class="tag-highlighter orange">橙</span><span class="tag-highlighter yellow">黄</span><span class="tag-highlighter green">绿</span><span class="tag-highlighter cyan">青</span><span class="tag-highlighter blue">蓝</span><span class="tag-highlighter purple">紫</span><span class="tag-highlighter grey">灰</span>，好耶我有 8 种颜色的笔！
-
-<h2 id="quot-醒目居中的文本引用"><a href="#quot-醒目居中的文本引用" class="headerlink" title="quot 醒目居中的文本引用"></a>quot 醒目居中的文本引用</h2><figure class="highlight markdown"><figcaption><span>Code</span><i class="ri-file-copy-line click-limit"></i></figcaption><div class="code-expand-btn"><i class="ri-arrow-down-s-fill"></i></div><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% quot 文本 [author:作者出处] [style:内联样式字符串] %}</span><br></pre></td></tr></tbody></table><span class="language">Markdown</span></figure>
-
-<p>想用点什么名人名言？</p>
-<div class="tag-quot"><p class="content">希望是本无所谓有，无所谓无的。这正如地上的路；其实地上本没有路，走的人多了，也便成了路</p><p class="author">—— 鲁迅《故乡》</p></div>
-
-<p>还想偶尔来点中二？</p>
-<div class="tag-quot"><p class="content" style="color: #8885ff;text-shadow: 1px 1px #86d1ff;font-weight: 400;">君指先跃动の光は、私の一生不変の信仰に、唯私の超电磁炮永世生き</p></div>
-
-<p>还支持<code>&lt;br&gt;</code>换行</p>
-<div class="tag-quot"><p class="content">VENI<br>VIDI<br>VICI</p><p class="author">—— 盖乌斯 · 尤利乌斯 · 凯撒<br>译：我来，我见，我征服</p></div>
-
-<h2 id="note-彩色引用块"><a href="#note-彩色引用块" class="headerlink" title="note 彩色引用块"></a>note 彩色引用块</h2><figure class="highlight markdown"><figcaption><span>Code</span><i class="ri-file-copy-line click-limit"></i></figcaption><div class="code-expand-btn"><i class="ri-arrow-down-s-fill"></i></div><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{% note [color:颜色] [icon:remixicon提供的图标] %}</span><br><span class="line">文本</span><br><span class="line">{% endnote %}</span><br></pre></td></tr></tbody></table><span class="language">Markdown</span></figure>
-
-<div class="tag-note red"><div class="icon"><i class="ri-error-warning-fill"></i></div><div class="content"><p>警告你哦！<br>
-可不准对猹涩涩！</p></div></div>
-
-<div class="tag-note orange"><div class="content"><p>橙色的引用块</p></div></div>
-
-<div class="tag-note yellow"><div class="content"><p>黄色的引用块</p></div></div>
-
-<div class="tag-note green"><div class="content"><p>绿色的引用块</p></div></div>
-
-<div class="tag-note cyan"><div class="content"><p>青色的引用块</p></div></div>
-
-<div class="tag-note blue"><div class="content"><p>蓝色的引用块</p></div></div>
-
-<div class="tag-note purple"><div class="content"><p>紫色的引用块</p></div></div>
-
-<div class="tag-note grey"><div class="content"><p>灰色的引用块</p></div></div></article></div><div id="post-copyright"><span>本文采用 </span><i class="ri-creative-commons-fill"> </i><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="font-weight: bold">CC BY-NC-SA 4.0</a><span> 协议，转载请标注文章来源。</span></div><div id="post-context"><div id="post-prev"><span>回顾上一篇</span><a href="/5d6d0217ee.html">扩展markdown语法测试</a></div><div id="post-next"><span>返回合集首页</span><a href="/56d88b5449.html">trefoid 主题编写-样式测试</a></div></div></div><aside id="rightbody"></aside></main><footer id="footer"></footer></div><div id="rightside"></div><!-- TODO: include './rightside.pug'--><!-- TODO: !=partial('includes/third-party/search/index', {}, {cache: true})--><div id="srcipt">
-<script src="/js/main.js"></script>
-
-<script src="https://cdn1.tianli0.top/npm/toastify-js/src/toastify.min.js"></script>
-
-<script src="/js/plugins/view-image.min.js"></script>
-<script>window.ViewImage && ViewImage.init('#mainbody img')</script>
-<script src="/js/plugins/lately.min.js"></script>
-<script>window.Lately && Lately.init({ target: 'time, .lately', lang: {
-    'second': ' 秒',
-    'minute': ' 分钟',
-    'hour': ' 小时',
-    'day': ' 天',
-    'month': ' 个月',
-    'year': ' 年',
-    'ago': '前',
-    'error': ' 错误'
-  }
-})
-</script><!-- TODO: search js--></div></body></html>
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE={title:"trefoid 主题编写-样式测试: 标签外挂测试",isPost:!0,isHome:!1,postUpdate:"2023-01-10 16:48:06"}</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"></div><div class="post" id="body-wrap"><header id="header"></header><main class="layout" id="content-inner"><aside id="leftbody"></aside><div id="mainbody"><div class="typesetting" id="post"><div id="post-head"><div id="post-folder"><a href="/">首页</a><span> / </span><a href="/56d88b5449.html">合集：样式测试</a></div><div id="post-meta">发布于 <time class="lately" datetime="2023-01-10T08:48:06.015Z" title="page.date 2023-01-10 16:48:06">2023-01-10</time></div><h1 id="post-title">trefoid 主题编写-样式测试: 标签外挂测试</h1></div><article class="post-content" id="article-container"><h2 id="mark-行内文本标记"><a href="#mark-行内文本标记" class="headerlink" title="mark 行内文本标记"></a>mark 行内文本标记</h2><figure class="highlight markdown"><figcaption><span>Code</span><i class="ri-file-copy-line click-limit"></i></figcaption><div class="code-expand-btn"><i class="ri-arrow-down-s-fill"></i></div><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% mark 文本 [color:颜色] [style:样式] %}</span><br></pre></td></tr></tbody></table><span class="language">Markdown</span></figure><p>既然是记事本风格的主题，那自然要有笔记风格的行内文本样式</p><p>我想用彩虹一般的<span class="tag-mark red">红</span><span class="tag-mark orange">橙</span><span class="tag-mark yellow">黄</span><span class="tag-mark green">绿</span><span class="tag-mark cyan">青</span><span class="tag-mark blue">蓝</span><span class="tag-mark purple">紫</span>颜色标记，额外加一个<span class="tag-mark grey">灰</span>色跟黑色作区别</p><p>同色的修饰是不是也应该搞一搞</p><p>我试着<span class="tag-mark red u">红色字</span>加条下划线，并给<span class="tag-mark orange wavy">橙色字</span>打上波浪线<br>着重标记着<span class="tag-mark purple emp">紫色字</span>，然后偷偷抹匀了<span class="tag-mark grey cover">灰色字</span><br>突然想删掉<span class="tag-mark blue del">蓝色字</span>，又想给文字写点<span class="tag-mark green sup">[绿色上角标]</span>和<span class="tag-mark cyan sub">[青色下角标]</span><br>原谅我有点贪心，到最后只想要默认颜色无脑 <span class="tag-mark kbd">ctrl</span> <span class="tag-mark kbd">c</span>+<span class="tag-mark kbd">v</span></p><h2 id="highlighter-荧光笔"><a href="#highlighter-荧光笔" class="headerlink" title="highlighter 荧光笔"></a>highlighter 荧光笔</h2><figure class="highlight markdown"><figcaption><span>Code</span><i class="ri-file-copy-line click-limit"></i></figcaption><div class="code-expand-btn"><i class="ri-arrow-down-s-fill"></i></div><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% highlighter 文本 color:颜色 [url:链接] %}</span><br></pre></td></tr></tbody></table><span class="language">Markdown</span></figure><p>做笔记，有时候用用<span class="tag-highlighter green">荧光笔</span>我觉得不过分吧</p><p>但我又想高亮带点链接，比如<a target="_blank" rel="noopener" href="https://github.com/2X-ercha/hexo-theme-trefoil" class="tag-highlighter cyan">github</a></p><span class="tag-highlighter red">红</span><span class="tag-highlighter orange">橙</span><span class="tag-highlighter yellow">黄</span><span class="tag-highlighter green">绿</span><span class="tag-highlighter cyan">青</span><span class="tag-highlighter blue">蓝</span><span class="tag-highlighter purple">紫</span><span class="tag-highlighter grey">灰</span>，好耶我有 8 种颜色的笔！<h2 id="quot-醒目居中的文本引用"><a href="#quot-醒目居中的文本引用" class="headerlink" title="quot 醒目居中的文本引用"></a>quot 醒目居中的文本引用</h2><figure class="highlight markdown"><figcaption><span>Code</span><i class="ri-file-copy-line click-limit"></i></figcaption><div class="code-expand-btn"><i class="ri-arrow-down-s-fill"></i></div><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% quot 文本 [author:作者出处] [style:内联样式字符串] %}</span><br></pre></td></tr></tbody></table><span class="language">Markdown</span></figure><p>想用点什么名人名言？</p><div class="tag-quot"><p class="content">希望是本无所谓有，无所谓无的。这正如地上的路；其实地上本没有路，走的人多了，也便成了路</p><p class="author">—— 鲁迅《故乡》</p></div><p>还想偶尔来点中二？</p><div class="tag-quot"><p class="content" style="color:#8885ff;text-shadow:1px 1px #86d1ff;font-weight:400">君指先跃动の光は、私の一生不変の信仰に、唯私の超电磁炮永世生き</p></div><p>还支持<code>&lt;br&gt;</code>换行</p><div class="tag-quot"><p class="content">VENI<br>VIDI<br>VICI</p><p class="author">—— 盖乌斯 · 尤利乌斯 · 凯撒<br>译：我来，我见，我征服</p></div><h2 id="note-彩色引用块"><a href="#note-彩色引用块" class="headerlink" title="note 彩色引用块"></a>note 彩色引用块</h2><figure class="highlight markdown"><figcaption><span>Code</span><i class="ri-file-copy-line click-limit"></i></figcaption><div class="code-expand-btn"><i class="ri-arrow-down-s-fill"></i></div><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{% note [color:颜色] [icon:remixicon提供的图标] %}</span><br><span class="line">文本</span><br><span class="line">{% endnote %}</span><br></pre></td></tr></tbody></table><span class="language">Markdown</span></figure><div class="tag-note red"><div class="icon"><i class="ri-error-warning-fill"></i></div><div class="content"><p>警告你哦！<br>可不准对猹涩涩！</p></div></div><div class="tag-note orange"><div class="content"><p>橙色的引用块</p></div></div><div class="tag-note yellow"><div class="content"><p>黄色的引用块</p></div></div><div class="tag-note green"><div class="content"><p>绿色的引用块</p></div></div><div class="tag-note cyan"><div class="content"><p>青色的引用块</p></div></div><div class="tag-note blue"><div class="content"><p>蓝色的引用块</p></div></div><div class="tag-note purple"><div class="content"><p>紫色的引用块</p></div></div><div class="tag-note grey"><div class="content"><p>灰色的引用块</p></div></div></article></div><div id="post-copyright"><span>本文采用 </span><i class="ri-creative-commons-fill"></i><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="font-weight:700">CC BY-NC-SA 4.0</a><span> 协议，转载请标注文章来源。</span></div><div id="post-context"><div id="post-prev"><span>回顾上一篇</span><a href="/5d6d0217ee.html">扩展markdown语法测试</a></div><div id="post-next"><span>返回合集首页</span><a href="/56d88b5449.html">trefoid 主题编写-样式测试</a></div></div></div><aside id="rightbody"></aside></main><footer id="footer"></footer></div><div id="rightside"></div><div id="srcipt"><script src="/js/main.js"></script><script src="https://cdn1.tianli0.top/npm/toastify-js/src/toastify.min.js"></script><script src="/js/plugins/view-image.min.js"></script><script>window.ViewImage&&ViewImage.init("#mainbody img")</script><script src="/js/plugins/lately.min.js"></script><script>window.Lately&&Lately.init({target:"time, .lately",lang:{second:" 秒",minute:" 分钟",hour:" 小时",day:" 天",month:" 个月",year:" 年",ago:"前",error:" 错误"}})</script></div></body></html>
